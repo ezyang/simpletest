@@ -71,7 +71,7 @@ class TestOfLogging extends TimeTestCase {</strong>
                 preg_match('/(\d+)/', $this->getFileLine('../temp/test.log', 0), $matches),
                 'Found timestamp');
         $clock = new clock();
-        $this->assertSameTime((integer)$matches[1], $clock->now(), 'Correct time');
+        $this->assertSameTime((int)$matches[1], $clock->now(), 'Correct time');
     }</strong>
 }
 ?>

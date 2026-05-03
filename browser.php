@@ -1009,7 +1009,7 @@ class SimpleBrowser
      */
     public function isSubmit($label)
     {
-        return (boolean) $this->page->getFormBySubmit(new SimpleByLabel($label));
+        return (bool) $this->page->getFormBySubmit(new SimpleByLabel($label));
     }
 
     /**
@@ -1095,7 +1095,7 @@ class SimpleBrowser
      */
     public function isImage($label)
     {
-        return (boolean) $this->page->getFormByImage(new SimpleByLabel($label));
+        return (bool) $this->page->getFormByImage(new SimpleByLabel($label));
     }
 
     /**

@@ -786,7 +786,7 @@ class SimpleTextAreaTag extends SimpleWidget
         if ($this->wrapIsEnabled()) {
             return wordwrap(
                     $text,
-                    (integer) $this->getAttribute('cols'),
+                    (int) $this->getAttribute('cols'),
                     "\r\n");
         }
 
