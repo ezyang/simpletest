@@ -67,7 +67,7 @@ function tests_have_run()
 {
     $context = SimpleTest::getContext();
     if ($context) {
-        return (boolean) $context->getTest();
+        return (bool) $context->getTest();
     }
 
     return false;
