@@ -199,7 +199,7 @@ class SimpleForm
             $this->checkboxes[$tag->getName()] = count($this->widgets) - 1;
         } else {
             $index = $this->checkboxes[$tag->getName()];
-            if (! is_a($this->widgets[$index], 'SimpleCheckboxGroup')) {
+            if (! is_a($this->widgets[$index], SimpleCheckboxGroup::class)) {
                 $previous              = $this->widgets[$index];
                 $this->widgets[$index] = new SimpleCheckboxGroup();
                 $this->widgets[$index]->addWidget($previous);

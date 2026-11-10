@@ -91,8 +91,8 @@ class SimpleExpectation
     public static function isExpectation($expectation)
     {
         return is_object($expectation) && (
-            is_a($expectation, 'SimpleExpectation') ||
-            is_a($expectation, 'ReferenceExpectation')
+            is_a($expectation, SimpleExpectation::class) ||
+            is_a($expectation, ReferenceExpectation::class)
         );
     }
 }

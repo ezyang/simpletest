@@ -59,7 +59,7 @@ class FieldExpectation extends SimpleExpectation
      */
     protected function isSingle($value)
     {
-        return is_string($value) || is_integer($value) || is_float($value);
+        return is_string($value) || is_int($value) || is_float($value);
     }
 
     /**

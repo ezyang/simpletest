@@ -34,7 +34,7 @@ class SimpleCookie
         $this->expiry = false;
         if (is_string($expiry)) {
             $this->expiry = strtotime($expiry);
-        } elseif (is_integer($expiry)) {
+        } elseif (is_int($expiry)) {
             $this->expiry = $expiry;
         }
         $this->is_secure = $is_secure;

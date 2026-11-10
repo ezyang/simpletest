@@ -65,7 +65,7 @@ class TestOfCompatibility extends UnitTestCase
     public function testInteraceComparison()
     {
         $object = new ComparisonClassWithInterface();
-        $this->assertFalse(is_a(new ComparisonClass(), 'ComparisonInterface'));
-        $this->assertTrue(is_a(new ComparisonClassWithInterface(), 'ComparisonInterface'));
+        $this->assertFalse(is_a(new ComparisonClass(), ComparisonInterface::class));
+        $this->assertTrue(is_a(new ComparisonClassWithInterface(), ComparisonInterface::class));
     }
 }

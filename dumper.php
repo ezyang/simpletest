@@ -55,7 +55,7 @@ class SimpleDumper
             return 'Boolean';
         } elseif (is_string($value)) {
             return 'String';
-        } elseif (is_integer($value)) {
+        } elseif (is_int($value)) {
             return 'Integer';
         } elseif (is_float($value)) {
             return 'Float';
