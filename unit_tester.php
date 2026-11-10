@@ -381,7 +381,7 @@ class UnitTestCase extends SimpleTestCase
         if ($expected === false) {
             return new TrueExpectation();
         }
-        if (is_a($expected, SimpleExpectation::class, true)) {
+        if (is_a($expected, SimpleExpectation::class)) {
             return $expected;
         }
 
