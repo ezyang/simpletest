@@ -356,7 +356,7 @@ class SimpleDumper
         $reflection = new ReflectionObject($object);
         $members    = array();
         foreach ($reflection->getProperties() as $property) {
-            if (method_exists($property, 'setAccessible')) {
+            if (PHP_VERSION_ID < 80100 && method_exists($property, 'setAccessible')) {
                 $property->setAccessible(true);
             }
             try {
